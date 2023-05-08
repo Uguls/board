@@ -7,7 +7,7 @@
       <th>아이디</th>
       <th>닉네임</th>
       <th>이메일</th>
-      <th>수정</th>
+      <th>가입 일자</th>
       <th>탈퇴</th>
     </tr>
     </thead>
@@ -17,7 +17,7 @@
         <td>{{username}}</td>
         <td>{{nickname}}</td>
         <td>{{email}}</td>
-        <td><a href="/users/edit/{{id}}" role="button" class="btn btn-primary bi bi-pencil-square"></a></td>
+        <td>{{modifiedDate}}</td>
         <td><button onclick="deleteUser('{{id}}')" class="btn btn-danger bi bi-trash-fill"></button></td>
       </tr>
     {{/users}}
