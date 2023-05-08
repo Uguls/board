@@ -1,0 +1,34 @@
+{{>layout/header}}
+
+<div id="users_list">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>아이디</th>
+      <th>닉네임</th>
+      <th>이메일</th>
+      <th>가입 일자</th>
+      <th>탈퇴</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#users}}
+      <tr>
+        <td>{{username}}</td>
+        <td>{{nickname}}</td>
+        <td>{{email}}</td>
+        <td>{{modifiedDate}}</td>
+        <td><button onclick="deleteUser('{{id}}')" class="btn btn-danger bi bi-trash-fill"></button></td>
+      </tr>
+    {{/users}}
+    </tbody>
+  </table>
+</div>
+<script>
+  function deleteUser(id) {
+    if (confirm("정말로 탈퇴하시겠습니까?")) {
+      location.href = "/admin/delete/" + id;
+    }
+  }
+</script>
+{{>layout/footer}}

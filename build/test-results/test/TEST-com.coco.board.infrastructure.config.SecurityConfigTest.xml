@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.coco.board.infrastructure.config.SecurityConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-07T15:59:30" hostname="DESKTOP-9OT266V" time="0.069">
+  <properties/>
+  <testcase name="해쉬_암호화()" classname="com.coco.board.infrastructure.config.SecurityConfigTest" time="0.069"/>
+  <system-out><![CDATA[1234 해쉬 : $2a$10$T1d4sZTHGgq61jSvENBciejRZGo5a06bP1AmthfHHMKo6zCVeeDPa
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
