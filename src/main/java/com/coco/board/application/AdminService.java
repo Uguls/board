@@ -24,13 +24,4 @@ public class AdminService {
     public User getUserById(Long id) {
         return userRepository.findById(id).orElse(null);
     }
-
-    public void updateUser(Long id, String nickname, String email) {
-        User user = userRepository.findById(id).orElse(null);
-        if (user != null) {
-            user.setNickname(nickname);
-            user.setEmail(email);
-            userRepository.save(user);
-        }
-    }
 }

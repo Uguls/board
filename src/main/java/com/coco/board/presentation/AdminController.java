@@ -29,16 +29,4 @@ public class AdminController {
         return "redirect:/admin/manage";
     }
 
-    @GetMapping("/edit/{id}")
-    public String editUser(@PathVariable Long id, Model model) {
-        User user = adminService.getUserById(id);
-        model.addAttribute("user", user);
-        return "admin/user-edit";
-    }
-
-    @PostMapping("/edit/{id}")
-    public String updateUser(@PathVariable Long id, @RequestParam String nickname, @RequestParam String email) {
-        adminService.updateUser(id, nickname, email);
-        return "redirect:/admin/manage";
-    }
 }
