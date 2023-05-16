@@ -8,6 +8,7 @@
       <th>닉네임</th>
       <th>이메일</th>
       <th>가입 일자</th>
+      <th>권한</th>
       <th>탈퇴</th>
     </tr>
     </thead>
@@ -18,6 +19,7 @@
         <td>{{nickname}}</td>
         <td>{{email}}</td>
         <td>{{modifiedDate}}</td>
+        <td>{{role}}</td>
         <td><button onclick="deleteUser('{{id}}')" class="btn btn-danger bi bi-trash-fill"></button></td>
       </tr>
     {{/users}}
